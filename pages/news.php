@@ -7,8 +7,8 @@
 
 
 <body class="bg-custom ">
-    <?php include "../include/header.php"; ?>
-    <?php include "../include/bg-header.php"; ?>
+    <?php include "../components/header.php"; ?>
+    <?php include "../components/bg-header.php"; ?>
     <div class="container  bg-light">
         <div class=" py-5">
             <!-- Section Header -->

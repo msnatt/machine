@@ -97,16 +97,22 @@
 
         // ฟังก์ชันกรองสินค้า
         function filterProducts() {
-            const filter = document.getElementById("price-filter").value;
-            if (filter === "low") {
-                filteredProducts = products.filter(p => p.price < 1500);
-            } else if (filter === "mid") {
-                filteredProducts = products.filter(p => p.price >= 1500 && p.price <= 2000);
-            } else if (filter === "high") {
-                filteredProducts = products.filter(p => p.price > 2000);
+            const urlParams = new URLSearchParams(window.location.search);
+            const filter = urlParams.get("tag");
+            if (filter === "1000") {
+                filteredProducts = products.filter(p => p.price <= 1000);
+            } else if (filter === "1500") {
+                filteredProducts = products.filter(p => p.price <= 1500);
+            } else if (filter === "2000") {
+                filteredProducts = products.filter(p => p.price <= 2000);
             } else {
                 filteredProducts = [...products];
             }
+
+            console.log(urlParams);
+            console.log(filter);
+            console.log(typeof(filter))
+            console.log(filteredProducts);
             currentPage = 1;
             renderProducts(currentPage);
         }
@@ -125,7 +131,7 @@
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
                         <p class="text-danger fw-bold">฿${product.price.toLocaleString()}</p>
-                        <a href="../pages/detailproduct.php?id=${product.id}" class="btn btn-primary w-100">ดูรายละเอียด</a>
+                        <a href="../pages/detailproduct.php?id=${product.id}" class="btn  w-100">ดูรายละเอียด</a>
 
                     </div>
                 </div>
@@ -145,10 +151,10 @@
         // Event Listeners
         document.getElementById("prev-page").addEventListener("click", () => changePage(-1));
         document.getElementById("next-page").addEventListener("click", () => changePage(1));
-        document.getElementById("price-filter").addEventListener("change", filterProducts);
         window.addEventListener('resize', updateProductsPerPage);
 
         // เริ่มต้น
+        filterProducts();
         updateProductsPerPage();
     });
 </script>

@@ -9,15 +9,16 @@
 
 
 <!-- Video Player -->
-<script>
+<!-- <script>
     document.addEventListener('DOMContentLoaded', () => {
         const videoContainer = document.getElementById('youtube-video');
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
+                //src="https://www.youtube.com/embed/IGtyATs2Fq0?autoplay=1&mute=1"
+
                 if (entry.isIntersecting) {
                     videoContainer.innerHTML = `
                     <iframe
-                        src="https://www.youtube.com/embed/IGtyATs2Fq0?autoplay=1&mute=1"
                         title="YouTube video"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -32,7 +33,7 @@
         observer.observe(videoContainer);
     });
 
-</script>
+</script> -->
 
 <!-- news  -->
 <script>
@@ -104,8 +105,9 @@
                     </div>
                 `;
             });
-
             updatePaginationState();
+
+
         }
 
         // Function to update Pagination State
@@ -152,8 +154,11 @@
 
         // Load initial page
         loadPageContent(currentPage);
+
     });
+
 </script>
+
 
 <script>
     const scrollContainer = document.getElementById('scrollContainer');

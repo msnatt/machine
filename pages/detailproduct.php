@@ -7,8 +7,8 @@
 
 
 <body class="bg-custom ">
-    <?php include "../include/header.php"; ?>
-    <?php include "../include/bg-header.php"; ?>
+    <?php include "../components/header.php"; ?>
+    <?php include "../components/bg-header.php"; ?>
     <div class="container bg-light">
         <br>
         <h2 class="text-center text-warning"><i class="bi bi-star-fill"></i><span class="text-dark">Detail of Product</span> </h2>

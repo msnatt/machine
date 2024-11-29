@@ -6,8 +6,8 @@
 <?php include "../include/style.html"; ?>
 
 <body class="bg-custom ">
-    <?php include "../include/header.php"; ?>
-    <?php include "../include/bg-header.php"; ?>
+    <?php include "../components/header.php"; ?>
+    <?php include "../components/bg-header.php"; ?>
     <div class="container box-shadow bg-light">
         <br>
         <div class="d-flex justify-content-center">

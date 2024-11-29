@@ -1,107 +1,10 @@
 <style>
-    .nav-header {
-        width: 100%;
-        height: 50px;
-    }
-
-    .nav-height-50 {
-        height: 50%;
-    }
-
-    i {
-        font-size: 25px;
-    }
-
-    .image-12 {
-        min-height: 200px;
+    /* A */
+    /* B */
+    .box-main {
         display: flex;
-        justify-self: center;
-        width: 200%;
-    }
-
-    @media (min-width: 992px) {
-        .image-lg-6 {
-            min-height: 400px;
-            display: flex;
-            justify-self: center;
-            width: 100vw;
-        }
-        .w-lg-100 {
-            width: 100% !important;
-        }
-        .w-lg-75 {
-            width: 75% !important;
-        }
-        .w-lg-50 {
-            width: 50% !important;
-        }
-        .w-lg-25 {
-            width: 25% !important;
-        }
-    }
-
-    header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin-top: 50px;
-        color: black;
-        text-align: center;
-        z-index: 1000;
-        opacity: 1;
-        transition: all 0.5s ease;
-        /* ทำให้การเปลี่ยนตำแหน่งและความโปร่งใสนุ่มนวล */
-    }
-
-    header.fixed {
-        position: fixed;
-        top: 0;
-        opacity: 1;
-        margin-top: 0px;
-    }
-
-    header.hidden {
-        opacity: 0;
-    }
-
-    .color-navbar {
-        background-color: #303030;
-    }
-
-    .text:hover {
-        color: black;
-        transform: scale(1.03);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .card:hover {
-        transform: scale(1.03);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .navbar-right {
-        margin-right: 0.5rem;
-    }
-
-    .pagination {
         justify-content: center;
-    }
-
-    .filter-section {
-        margin-bottom: 20px;
-    }
-
-    .w-15 {
-        width: 15%;
-    }
-
-    li {
-        margin: 0rem 1rem 0rem 1rem;
-    }
-
-    .wh {
-        width: 100%;
+        align-items: center;
         height: 100%;
     }
 
@@ -111,23 +14,24 @@
 
     }
 
-    .item {
-        border-radius: 8px;
-        /* border: 2px solid #F28222; */
-        background-color: white;
-        padding: 20px;
-        color: white;
-        font-size: 18px;
-        width: 400px;
+    .btn:hover {
+        background-color: #F28222;
     }
 
-    .box-main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+    .button {
+        background-color: none;
     }
 
+    .bg-custom {
+        background: linear-gradient(120deg, #F28222, #FFA75E, #FF5733);
+    }
+
+    .bg-light {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        /* เงาเบา */
+    }
+
+    /* C */
     .col-flex {
         flex-direction: column;
         justify-content: space-evenly;
@@ -149,49 +53,15 @@
         border: 1px solid #F28222;
     }
 
-    .btn:hover {
-        background-color: #F28222;
+    .color-navbar {
+        background-color: #303030;
     }
 
-    input:focus {
-        border: 2px solid #F28222;
+    .card:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease-in-out;
     }
 
-    .button {
-        background-color: none;
-    }
-
-    .bg-custom {
-        background: linear-gradient(120deg, #F28222, #FFA75E, #FF5733);
-    }
-
-    .bg-light {
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-        /* เงาเบา */
-    }
-
-    .popup {
-        display: none;
-        position: fixed;
-        right: 0vw;
-        top: 10vh;
-        padding: 10px;
-        background-color: rgba(100, 149, 237, 0.7);
-        color: rgb(255, 255, 255);
-        border-radius: 10px;
-    }
-
-    .scroll-container {
-        display: flex;
-        gap: 15px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        padding: 10px 0;
-    }
-
-    .scroll-container::-webkit-scrollbar {
-        display: none;
-    }
 
     .card {
         flex: 0 0 auto;
@@ -223,6 +93,170 @@
     .card-text {
         font-size: 0.9rem;
         color: #555;
+    }
+
+    /* D */
+    /* E */
+    /* F */
+    .filter-section {
+        margin-bottom: 20px;
+    }
+
+    /* G */
+    /* H */
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 50px;
+        color: black;
+        text-align: center;
+        z-index: 1000;
+        opacity: 1;
+        transition: all 0.5s ease;
+        /* ทำให้การเปลี่ยนตำแหน่งและความโปร่งใสนุ่มนวล */
+    }
+
+    header.fixed {
+        position: fixed;
+        top: 0;
+        opacity: 1;
+        margin-top: 0px;
+    }
+
+    header.hidden {
+        opacity: 0;
+    }
+
+    /* I */
+    i {
+        font-size: 25px;
+    }
+
+    .image-12 {
+        min-height: 200px;
+        display: flex;
+        justify-self: center;
+        width: 200%;
+    }
+
+    .item {
+        border-radius: 8px;
+        /* border: 2px solid #F28222; */
+        background-color: white;
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+        width: 400px;
+    }
+
+    input:focus {
+        border: 2px solid #F28222;
+    }
+
+    /* J */
+    /* K */
+    /* L */
+    li {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+    /* M */
+    @media (min-width: 992px) {
+        .image-lg-6 {
+            min-height: 400px;
+            display: flex;
+            justify-self: center;
+            width: 100vw;
+        }
+
+        .w-lg-100 {
+            width: 100% !important;
+        }
+
+        .w-lg-75 {
+            width: 75% !important;
+        }
+
+        .w-lg-50 {
+            width: 50% !important;
+        }
+
+        .w-lg-25 {
+            width: 25% !important;
+        }
+
+    }
+
+    /* N */
+    .nav-header {
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav-height-50 {
+        height: 50%;
+    }
+
+    .navbar-right {
+        margin-right: 0.5rem;
+    }
+
+    /* แสดง dropdown เมื่อ hover */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* ป้องกันการกระตุกเมื่อ hover */
+    .nav-item.dropdown .dropdown-menu {
+        margin-top: 0;
+    }
+
+    /* O */
+    /* P */
+    .pagination {
+        justify-content: center;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        right: 0vw;
+        top: 10vh;
+        padding: 10px;
+        background-color: rgba(100, 149, 237, 0.7);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    /* Q */
+    /* R */
+    /* S */
+    .scroll-container {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 10px 0;
+    }
+
+    .scroll-content {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 45px;
+        padding: 10px 0;
+        scroll-snap-type: x mandatory;
+    }
+
+    .scroll-content::-webkit-scrollbar {
+        display: none;
+        /* ซ่อน scrollbar */
+    }
+
+    .scroll-container::-webkit-scrollbar {
+        display: none;
     }
 
     /* Buttons */
@@ -264,4 +298,29 @@
         right: 10px;
         /* ปรับระยะห่างจากขอบขวา */
     }
+
+    /* T */
+
+    .text:hover {
+        color: black;
+        transform: scale(1.03);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* U */
+    /* V */
+    /* W */
+
+    .w-15 {
+        width: 15%;
+    }
+
+    .wh {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* X */
+    /* Y */
+    /* Z */
 </style>
